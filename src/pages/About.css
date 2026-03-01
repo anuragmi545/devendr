@@ -202,6 +202,11 @@
 }
 
 @media (max-width: 768px) {
+    .about-photo-wrapper {
+        max-width: 280px;
+        margin-bottom: 2rem;
+    }
+
     .about-photo-wrapper::before {
         display: none;
     }
@@ -210,13 +215,49 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: -1.5rem;
-        width: 80%;
+        width: 90%;
+        padding: 1rem;
         justify-content: center;
+    }
+
+    .experience-badge .years {
+        font-size: 2.2rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bio-lead {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .title-underline {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .credential-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
     }
 
     .credential-item:hover {
         border-radius: 20px;
-        transform: translateX(5px);
+        transform: translateY(-5px);
+        /* Changed from translateX to Y for mobile */
+    }
+
+    .about-values {
+        text-align: center;
+    }
+
+    .about-values li {
+        justify-content: center;
     }
 
     .about-values:hover {

@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    const closeMenu = () => setIsOpen(false);
 
     return (
         <header className="navbar-header">
@@ -37,11 +38,11 @@ const Navbar = () => {
             {/* Mobile Menu */}
             {isOpen && (
                 <nav className="mobile-nav">
-                    <NavLink to="/" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={toggleMenu} end>Home</NavLink>
-                    <NavLink to="/about" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={toggleMenu}>About</NavLink>
-                    <NavLink to="/services" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={toggleMenu}>Services & Pricing</NavLink>
-                    <NavLink to="/contact" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={toggleMenu}>Contact</NavLink>
-                    <Link to="/contact" className="btn btn-primary mobile-btn" onClick={toggleMenu}>Book Consultation</Link>
+                    <NavLink to="/" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={closeMenu} end>Home</NavLink>
+                    <NavLink to="/about" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={closeMenu}>About</NavLink>
+                    <NavLink to="/services" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={closeMenu}>Services & Pricing</NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => "mobile-link" + (isActive ? " active" : "")} onClick={closeMenu}>Contact</NavLink>
+                    <Link to="/contact" className="btn btn-primary mobile-btn" onClick={closeMenu}>Book Consultation</Link>
                 </nav>
             )}
         </header>

@@ -81,6 +81,7 @@
     left: 0;
     width: 100%;
     box-shadow: var(--shadow-md);
+    z-index: 1001;
 }
 
 .mobile-link {

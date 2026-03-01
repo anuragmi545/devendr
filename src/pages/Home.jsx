@@ -50,7 +50,7 @@ const Home = () => {
                     className="hero-swiper"
                 >
                     <SwiperSlide>
-                        <div className="hero-slide-bg" style={{ backgroundImage: `url(${devendraPhoto})`, backgroundPosition: 'top center' }}>
+                        <div className="hero-slide-bg slide-photo-bg" style={{ backgroundImage: `url(${devendraPhoto})` }}>
                             <div className="hero-overlay" style={{ background: 'linear-gradient(135deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.8) 50%, rgba(44, 83, 100, 0.7) 100%)' }}></div>
                             <div className="container hero-content">
                                 <div className="hero-badge">
