@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { GraduationCap, Award, MapPin, Scale, HeartHandshake } from 'lucide-react';
 import './About.css';
+import devendraPhoto from '../assets/devendra-photo.jpg';
 
 const About = () => {
     return (
@@ -25,7 +26,7 @@ const About = () => {
                     <div className="about-photo-wrapper">
                         <div className="photo-frame">
                             {/* Note: The user provided a photo, replace '/devendra-photo.jpg' with actual image later or drop it in public */}
-                            <img src="/devendra-photo.jpg" alt="Advocate Devendra Singh" className="advocate-photo" />
+                            <img src={devendraPhoto} alt="Advocate Devendra Singh" className="advocate-photo" />
                         </div>
                         <div className="experience-badge">
                             <span className="years">2+</span>

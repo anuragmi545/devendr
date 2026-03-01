@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Home.css';
+import devendraPhoto from '../assets/devendra-photo.jpg';
 
 const Home = () => {
     return (
@@ -49,6 +50,25 @@ const Home = () => {
                     className="hero-swiper"
                 >
                     <SwiperSlide>
+                        <div className="hero-slide-bg" style={{ backgroundImage: `url(${devendraPhoto})`, backgroundPosition: 'top center' }}>
+                            <div className="hero-overlay" style={{ background: 'linear-gradient(135deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.8) 50%, rgba(44, 83, 100, 0.7) 100%)' }}></div>
+                            <div className="container hero-content">
+                                <div className="hero-badge">
+                                    <Scale size={18} className="text-gold" />
+                                    <span>Dedicated to Justice & Integrity</span>
+                                </div>
+                                <h1>Expert Legal Counsel for <span className="text-gold">Your Peace of Mind</span></h1>
+                                <p className="hero-subtitle">
+                                    Providing strategic legal solutions with a commitment to excellence and honest representation in every case.
+                                </p>
+                                <div className="hero-actions">
+                                    <Link to="/about" className="btn btn-primary btn-lg">Know More About Me</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                         <div className="hero-slide-bg" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80')" }}>
                             <div className="hero-overlay"></div>
                             <div className="container hero-content">
@@ -76,25 +96,6 @@ const Home = () => {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="hero-slide-bg" style={{ backgroundImage: "url('/devendra-photo.jpg')", backgroundPosition: 'top center' }}>
-                            <div className="hero-overlay" style={{ background: 'linear-gradient(135deg, rgba(15, 32, 39, 0.9) 0%, rgba(32, 58, 67, 0.8) 50%, rgba(44, 83, 100, 0.7) 100%)' }}></div>
-                            <div className="container hero-content">
-                                <div className="hero-badge">
-                                    <Scale size={18} className="text-gold" />
-                                    <span>Dedicated to Justice & Integrity</span>
-                                </div>
-                                <h1>Expert Legal Counsel for <span className="text-gold">Your Peace of Mind</span></h1>
-                                <p className="hero-subtitle">
-                                    Providing strategic legal solutions with a commitment to excellence and honest representation in every case.
-                                </p>
-                                <div className="hero-actions">
-                                    <Link to="/about" className="btn btn-primary btn-lg">Know More About Me</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
                         <div className="hero-slide-bg" style={{ backgroundColor: 'var(--primary-navy)' }}>
                             <div className="hero-overlay" style={{ background: 'linear-gradient(135deg, rgba(15, 32, 39, 0.95) 0%, rgba(32, 58, 67, 0.9) 100%)' }}></div>
                             <div className="container hero-split-layout">
@@ -114,7 +115,7 @@ const Home = () => {
                                 <div className="hero-split-image">
                                     <div className="hero-photo-wrapper">
                                         <div className="hero-photo-frame">
-                                            <img src="/devendra-photo.jpg" alt="Advocate Devendra Singh" />
+                                            <img src={devendraPhoto} alt="Advocate Devendra Singh" />
                                         </div>
                                     </div>
                                 </div>
