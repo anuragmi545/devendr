@@ -13,7 +13,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/devendr">
         <div className="app-container">
           <Navbar />
           <main className="main-content">
