@@ -1,0 +1,137 @@
+/* Services Page Styles */
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.practice-card {
+    background-color: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.practice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-bottom: 3px solid var(--accent-gold);
+}
+
+.practice-icon {
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary-navy);
+    color: var(--accent-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.practice-card:hover .practice-icon {
+    background-color: var(--accent-gold);
+    color: var(--primary-navy);
+    transform: scale(1.1);
+}
+
+.practice-card h3 {
+    font-size: 1.15rem;
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+/* Pricing Section */
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    text-align: left;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-table th {
+    background-color: var(--primary-navy);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table tr:hover {
+    background-color: #f8fafc;
+}
+
+.pricing-table td {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.fee-amount {
+    color: var(--primary-navy);
+    font-weight: 700 !important;
+    font-size: 1.15rem !important;
+}
+
+.pricing-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(212, 175, 55, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-gold);
+}
+
+.pricing-disclaimer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.pricing-disclaimer strong {
+    color: var(--primary-navy);
+}
+
+@media (max-width: 768px) {
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 1rem;
+    }
+
+    .fee-amount {
+        font-size: 1.05rem !important;
+    }
+}
